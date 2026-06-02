@@ -1,0 +1,51 @@
+{
+  "name": "consentgate-mcp",
+  "version": "0.1.0",
+  "description": "MCP server exposing ConsentGate consent checks and human-in-the-loop approvals as agent tools.",
+  "type": "module",
+  "bin": {
+    "consentgate-mcp": "dist/index.js"
+  },
+  "files": [
+    "dist",
+    "README.md"
+  ],
+  "scripts": {
+    "build": "tsc",
+    "prepare": "tsc",
+    "start": "node dist/index.js",
+    "dev": "tsx src/index.ts",
+    "smoke": "tsx test/smoke.ts"
+  },
+  "keywords": [
+    "mcp",
+    "model-context-protocol",
+    "consentgate",
+    "agent",
+    "human-in-the-loop",
+    "approvals"
+  ],
+  "license": "MIT",
+  "author": "Jesse Peterson",
+  "homepage": "https://consentgate.fyi",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jessepetersondev/agentz-fyi-consent.git",
+    "directory": "mcp"
+  },
+  "bugs": {
+    "url": "https://github.com/jessepetersondev/agentz-fyi-consent/issues"
+  },
+  "engines": {
+    "node": ">=18"
+  },
+  "dependencies": {
+    "@modelcontextprotocol/sdk": "^1.12.0",
+    "zod": "^3.23.8"
+  },
+  "devDependencies": {
+    "@types/node": "^20.14.0",
+    "tsx": "^4.19.0",
+    "typescript": "^5.6.0"
+  }
+}
