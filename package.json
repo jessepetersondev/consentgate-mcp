@@ -1,6 +1,7 @@
 {
   "name": "consentgate-mcp",
-  "version": "0.1.0",
+  "mcpName": "io.github.jessepetersondev/consentgate-mcp",
+  "version": "0.1.1",
   "description": "MCP server exposing ConsentGate consent checks and human-in-the-loop approvals as agent tools.",
   "type": "module",
   "bin": {
@@ -30,11 +31,10 @@
   "homepage": "https://consentgate.fyi",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/jessepetersondev/agentz-fyi-consent.git",
-    "directory": "mcp"
+    "url": "git+https://github.com/jessepetersondev/consentgate-mcp.git"
   },
   "bugs": {
-    "url": "https://github.com/jessepetersondev/agentz-fyi-consent/issues"
+    "url": "https://github.com/jessepetersondev/consentgate-mcp/issues"
   },
   "engines": {
     "node": ">=18"
